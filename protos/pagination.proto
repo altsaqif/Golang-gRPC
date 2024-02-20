@@ -1,0 +1,11 @@
+syntax = "proto3";
+package go_grpc;
+
+option go_package = "github.com/altsaqif/go-grpc/pb/pagination";
+
+message Pagination {
+    uint64 total = 1;
+    uint32 per_page = 2;
+    uint32 current_page = 3;
+    uint32 last_page = 4; 
+}
